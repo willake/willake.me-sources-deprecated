@@ -1,0 +1,93 @@
+html {
+    font-size: 10px;
+    font-family: 'Raleway', Helvetica, Arial, 'PingFang TC', 'Microsoft JhengHei', sans-serif !important;
+    font-weight: 500;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:active {
+        text-decoration: none;
+    }
+}
+
+.h {
+    &1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        font-weight: 500;
+
+        @media screen and (min-width: $sm){
+            font-size: 2.5rem;
+        }
+    }
+
+    &2 {
+        font-size: 1.8rem;
+        font-weight: 500;
+
+        @media screen and (min-width: $sm){
+            font-size: 1.8rem;
+        }
+    }
+
+    &3 {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    &4 {
+        font-size: 1.4rem;
+        font-weight: 500;
+
+        @media screen and (min-width: $sm){
+            font-size: 1.6rem;
+        }
+    }
+
+    &5 {
+        font-size: 1.2rem;
+    }
+
+    &6 {
+        
+    }
+}
+
+.content {
+    font-size: 1.4rem;
+
+    @media screen and (min-width: $lg){
+        font-size: 1.6rem;
+    }
+}
+
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+.color__white {
+    color: white;
+} 
+
+.color__green {
+    color: #70a9a1;
+}
+
+.color__grey {
+    color: #383635;
+}

@@ -1,0 +1,13 @@
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.links__download {
+    background-color: #70a9a1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}

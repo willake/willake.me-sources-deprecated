@@ -1,0 +1,127 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #70a9a1;
+    z-index: 800;
+}
+
+.nav__mobile {
+    display: block;
+
+    @media screen and (min-width: $lg){
+        display: none;
+    }
+}
+
+.nav__space {
+    width: 100%;
+    height: 55px;
+
+    @media screen and (min-width: $lg){
+        height: 70px;
+    }
+}
+
+.nav__mobile__bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 900;
+    background-color: #70a9a1;
+}
+
+.nav__mobile__logo {
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    background-image: url(../assets/images/common_logo.png);
+    background-size: contain;
+}
+
+.nav__mobile__title {
+    font-size: 1.8rem;
+}
+
+.nav__mobile__button {
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.nav__mobile__dropdown {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 50;
+    transform: translateY(-250px);
+    transition: 0.2s ease-in;
+
+    &.is-active {
+        transform: translateY(0px);
+    }
+}
+
+.nav__mobile__dropdown__item {
+    background-color: #70a9a1;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 1.6rem;
+    z-index: 50;
+}
+
+.nav__desktop {
+    display: none;
+    @media screen and (min-width: $lg){
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+.nav__desktop__link {
+    @media screen and (min-width: $lg){
+        position: relative;
+        width: 150px;
+        margin: 0 20px;
+        text-align: center;
+        font-size: 2.0rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        transition: 0.2s ease;
+    }
+
+    &:hover {
+        @media screen and (min-width: $lg){
+            transform: scale(1.05);
+            color: #0b2027;
+        }
+    }
+}
+
+.nav__desktop__logo {
+    @media screen and (min-width: $lg){
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: calc(50% - 40px);
+        left: calc(50% - 50px);
+        // margin: 5px;
+        background-image: url(../assets/images/common_logo.png);
+        background-size: contain;
+        transition: 0.2s ease;
+    }
+
+    &:hover {
+        @media screen and (min-width: $lg){
+            transform: scale(1.05);
+        }
+    }
+}

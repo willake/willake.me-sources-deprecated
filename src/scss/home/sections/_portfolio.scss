@@ -1,0 +1,166 @@
+.portfolio {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background-color: #EEEEEE;
+}
+
+.portfolio__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: $sm){
+        width: calc(100% - 80px);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 40px;
+    }
+
+    @media screen and (min-width: $lg){
+        width: 70%;
+        padding: 0 40px;
+    }
+}
+
+.portfolio__item {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    margin-bottom: 40px;
+    // flex: 1;
+
+    @media screen and (min-width: $sm){
+        width: 250px;
+        height: 125px;
+        margin: 10px 10px 40px 10px;
+    }
+
+    @media screen and (min-width: $lg){
+        // width:  48%;
+        // height: 120px;
+        width: 300px;
+        height: 150px;
+    }
+}
+
+.portfolio__item__body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 3px #888888;
+
+    &.forest__browser {
+        background-image: url(../../../assets/images/portfolio/forest-browser/intro_preview-01.jpg);
+    }
+
+    &.pinka {
+        background-image: url(../../../assets/images/portfolio/pinka/intro_preview-01.jpg);
+    }
+
+    &.escape__the__room__remake {
+        background-image: url(../../../assets/images/portfolio/escape-the-room-remake/intro_preview-01.jpg);
+    }
+
+    &.snowball__rage {
+        background-image: url(../../../assets/images/portfolio/snowball-rage/intro_preview-01.jpg);
+    }
+
+    &.escape__the__room {
+        background-image: url(../../../assets/images/portfolio/escape-the-room/intro_preview-01.jpg);
+    }
+
+    &.hourglass {
+        background-image: url(../../../assets/images/portfolio/hourglass/intro_preview-01.jpg);
+    }
+
+    &.i__just__want__to__cook {
+        background-image: url(../../../assets/images/portfolio/i-just-want-to-cook/intro_preview-01.jpg);
+    }
+
+    &.secret__triangle {
+        background-image: url(../../../assets/images/portfolio/secret-triangle/intro_preview-01.jpg);
+    }
+}
+
+.portfolio__item__background {
+    width: 100%;
+    z-index: 5;
+}
+
+.portfolio__item__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.1;
+    z-index: 10;
+
+    @media screen and (min-width: $lg){
+        opacity: 0.4;
+    }
+    
+
+    &:hover {
+        @media screen and (min-width: $lg){
+            transition: 0.3s ease-in;
+            opacity: 0;
+        }
+    }
+}
+
+.portfolio__item__text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    z-index: 15;
+}
+
+.portfolio__item__title {
+    margin-right: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.portfolio__item__tags {
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.portfolio__item__tag {
+    background-color:#70a9a1;
+    border-radius: 0 0 5px 5px;
+    padding: 5px 10px;  
+    margin: 0 5px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}

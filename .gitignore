@@ -1,0 +1,11 @@
+.DS_Store
+
+node_modules/
+.vscode/
+dist/
+src/_locales
+
+locale.json
+package-lock.json
+
+legacy/

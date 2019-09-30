@@ -1,0 +1,14 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@import "../common.scss";
+@import "./sections/about_me";
+@import "./sections/skill";
+@import "./sections/experience";
+// @import "../home/sections/contact";
+
+@import "../nav";
+@import "../footer";
+@import "../contact";

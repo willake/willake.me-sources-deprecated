@@ -1,0 +1,58 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.contact__button__link {
+    display: block;
+    background-color: #0b2027;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    @media screen and (min-width: $lg){
+        transition: 0.2s ease;
+    }
+
+    &:hover {
+        @media screen and (min-width: $lg){
+            transform: scale(1.1);
+            color: white;
+        }
+    }
+}
+
+.contact__email {
+    margin-top: 20px;
+}
+
+.contact__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact__link {
+    margin: 10px 10px;
+
+    @media screen and (min-width: $lg){
+        margin: 15px 10px;
+    }
+}
+
+.contact__link__icon {
+    font-size: 3rem;
+
+    @media screen and (min-width: $lg){
+        font-size: 3.5rem;
+    }
+}

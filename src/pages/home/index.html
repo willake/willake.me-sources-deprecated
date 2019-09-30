@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    ${ require('../../partials/metas.html') }
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111797252-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111797252-1');
+
+    </script>
+    <meta charset="utf-8">
+    <title>Willake Lin | Game Programmer Portfolio</title>
+</head>
+<body>
+    ${ require('../../partials/nav.html') }
+    <section class="intro">
+        <!-- <h1 class="intro__title color__grey">- Willake Lin -</h1>
+        <h2 class="intro__subtitle color__grey">Gameplay Programmer</h2> -->
+        <div class="intro__content">
+            <video class="intro__video" autoplay="autoplay" loop="loop" muted="muted" preload="preload">
+                    <source src="../../assets/videos/portfolio.mp4" type="video/mp4">
+                    <source src="../../assets/videos/portfolio.webm" type="video/webm">
+            </video>
+            <div class="intro__overlay">
+            </div>
+            <div class="intro__texts">
+                <h1 class="intro__title color__white">- Willake Lin -</h1>
+                <h2 class="intro__subtitle color__white">Gameplay Programmer</h2>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <h2 class="portfolio__title h1">Professional Projects</h2>
+        <div class="portfolio__row">
+            <a class="portfolio__item" href="/projects/forest-browser-extension">
+                <div class="portfolio__item__body forest__browser">
+                    <div class="portfolio__item__overlay"></div>
+                    <div class="portfolio__item__text">
+                        <h2 class="portfolio__item__title">Forest Browser Extension</h1>
+                    </div>
+                </div>
+                <div class="portfolio__item__tags">
+                    <div class="portfolio__item__tag color__white">Javascript</div>
+                </div>
+            </a>
+            <a class="portfolio__item" href="/projects/pinka">
+                <div class="portfolio__item__body pinka">
+                    <div class="portfolio__item__overlay"></div>
+                    <div class="portfolio__item__text">
+                        <h2 class="portfolio__item__title">Pinka</h1>
+                    </div>
+                </div>
+                <div class="portfolio__item__tags">
+                    <div class="portfolio__item__tag color__white">Unity</div>
+                    <div class="portfolio__item__tag color__white">C#</div>
+                </div>
+            </a>
+        </div>
+        <h2 class="portfolio__title h1">Side Projects</h2>
+        <div class="portfolio__row">
+            <a class="portfolio__item" href="/projects/escape-the-room-remake">
+            <div class="portfolio__item__body escape__the__room__remake">
+                <div class="portfolio__item__overlay"></div>
+                <div class="portfolio__item__text">
+                    <h2 class="portfolio__item__title">Escape the Room : Remake</h1>
+                </div>
+            </div>
+            <div class="portfolio__item__tags">
+                <div class="portfolio__item__tag color__white">Unreal</div>
+                <div class="portfolio__item__tag color__white">Blueprint</div>
+                <div class="portfolio__item__tag color__white">C++</div>
+            </div>
+            </a>
+            <a class="portfolio__item" href="/projects/snowball-rage">
+                <div class="portfolio__item__body snowball__rage">
+                    <div class="portfolio__item__overlay"></div>
+                    <div class="portfolio__item__text">
+                        <h2 class="portfolio__item__title">Snowball Rage</h1>
+                    </div>
+                </div>
+                <div class="portfolio__item__tags">
+                    <div class="portfolio__item__tag color__white">Unreal</div>
+                    <div class="portfolio__item__tag color__white">Blueprint</div>
+                </div>
+            </a>
+            <a class="portfolio__item" href="/projects/escape-the-room">
+                <div class="portfolio__item__body escape__the__room">
+                    <div class="portfolio__item__overlay"></div>
+                    <div class="portfolio__item__text">
+                        <h2 class="portfolio__item__title">Escape the Room</h1>
+                    </div>
+                </div>
+                <div class="portfolio__item__tags">
+                    <div class="portfolio__item__tag color__white">Actionscript 3.0</div>
+                </div>
+            </a>
+        </div>
+        <h2 class="portfolio__title h1">Student Projects</h2>
+        <div class="portfolio__row">
+            <a class="portfolio__item" href="/projects/hourglass">
+                <div class="portfolio__item__body hourglass">
+                    <div class="portfolio__item__overlay"></div>
+                    <div class="portfolio__item__text">
+                        <h2 class="portfolio__item__title">Hourglass : Project Norn</h1>
+                    </div>
+                </div>
+                <div class="portfolio__item__tags">
+                    <div class="portfolio__item__tag color__white">Unity</div>
+                    <div class="portfolio__item__tag color__white">C#</div>
+                </div>
+            </a>
+            <a class="portfolio__item" href="/projects/i-just-want-to-cook">
+                <div class="portfolio__item__body i__just__want__to__cook">
+                    <div class="portfolio__item__overlay"></div>
+                    <div class="portfolio__item__text">
+                        <h2 class="portfolio__item__title">I Just Want to Cook</h1>
+                    </div>
+                </div>
+                <div class="portfolio__item__tags">
+                    <div class="portfolio__item__tag color__white">Unity</div>
+                    <div class="portfolio__item__tag color__white">C#</div>
+                </div>
+            </a>
+            <a class="portfolio__item" href="/projects/secret-triangle">
+                <div class="portfolio__item__body secret__triangle">
+                    <div class="portfolio__item__overlay"></div>
+                    <div class="portfolio__item__text">
+                        <h2 class="portfolio__item__title">Secret Triangle</h1>
+                    </div>
+                </div>
+                <div class="portfolio__item__tags">
+                    <div class="portfolio__item__tag color__white">Unity</div>
+                    <div class="portfolio__item__tag color__white">C#</div>
+                </div>
+            </a>
+        </div>
+    </section>
+    ${ require('../../partials/contact.html') }
+    ${ require('../../partials/footer.html') }
+</body>
+
+</html>

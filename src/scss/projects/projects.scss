@@ -1,0 +1,17 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@import "../common.scss";
+@import "./sections/banner";
+@import "./sections/about";
+@import "./sections/content";
+@import "./sections/links";
+
+@import "../nav";
+@import "../footer";
+
+body {
+    background-color: #f3f3f1;
+}
