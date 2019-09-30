@@ -51,12 +51,13 @@
 
 .skill__category__item__title {
     background: #70a9a1;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     border-radius: 5px 5px 0px 0px;
     padding: 10px 10px;
 
     @media screen and (min-width: $lg){
         padding: 10px 10px;
+        font-size: 1.6rem;
     }
 }
 
