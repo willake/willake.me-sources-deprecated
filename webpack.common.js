@@ -50,7 +50,7 @@ module.exports = {
                     {
                         loader: "file-loader",
                         options: {
-                            name: "[name].[contentHash].[ext]",
+                            name: "[name].[ext]",
                             outputPath: "./assets/images/"
                         }
                     }

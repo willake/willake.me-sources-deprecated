@@ -33,7 +33,7 @@ module.exports = merge(common, {
         devtool: "source-map",
         output: {
             path: path.resolve(__dirname, "dist"),
-            filename: "[name].[contentHash].bundle.js",
+            filename: "[name].bundle.js",
             publicPath: "/"
         },
         plugins: [
@@ -87,6 +87,9 @@ module.exports = merge(common, {
                 filename: "./projects/secret-triangle/index.html",
                 chunks: ["projects"]
             }),
+            new MiniCssExtractPlugin({
+                filename: "./css/[name].css"
+            }),
             new SitemapWebpackPlugin(siteUrl, paths),
             new RobotstxtPlugin({
                 policy: [{ userAgent: "*", allow: "*" }],
@@ -116,9 +119,11 @@ module.exports = merge(common, {
                 {
                     test: /\.(sa|sc|c)ss$/,
                     use: [
-                        {
-                            loader: "style-loader"
-                        },
+                        // {
+                        //     loader: "style-loader"
+                        // },
+                            MiniCssExtractPlugin.loader
+                        ,
                         {
                             loader: "css-loader"
                         },
