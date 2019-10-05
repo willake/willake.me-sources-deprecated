@@ -1,12 +1,8 @@
-# Waterdo Landing Page
+# willake.me sources
 
-Official website of Waterdo
+personal website sources
 
 ## Install / Test / Build
-
-### genBuild
-
-`$ ./genBuild.sh`
 
 ### Install
 
@@ -14,7 +10,7 @@ Official website of Waterdo
 
 ### Test
 
-`$ npm start`
+`$ npm run dev
 
 ### Build
 
